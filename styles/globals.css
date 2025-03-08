@@ -1,0 +1,25 @@
+/* styles/globals.css */
+
+/* Import Tailwind base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add custom global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8; /* Light background color */
+}
+
+h1, h2, h3 {
+  font-family: 'Helvetica', sans-serif; /* Custom font for headers */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
