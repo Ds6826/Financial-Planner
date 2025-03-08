@@ -62,7 +62,7 @@ const Login = () => {
                 onChange={() => setRememberMe(!rememberMe)}
                 className="h-4 w-4 border-gray-300 rounded text-purple-600 focus:ring-2 focus:ring-purple-500"
               />
-              <label htmlFor="remember-me" className="ml-2 text-sm text-gray-600">Remember e</label>
+              <label htmlFor="remember-me" className="ml-2 text-sm text-gray-600">Remember me</label>
             </div>
             <a href="#" className="text-sm text-purple-600 hover:text-purple-800">Forgot password?</a>
           </div>
