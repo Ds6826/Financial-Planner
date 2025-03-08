@@ -1,4 +1,3 @@
-// pages/login.js (or wherever your login form is located)
 import { useState } from 'react';
 
 const Login = () => {
@@ -12,13 +11,13 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-500 to-indigo-500">
-      <div className="w-full max-w-md bg-white rounded-xl shadow-xl p-8">
+    <div className="homepage-container">
+      <div className="homepage-card">
         {/* Logo and Title */}
-        <div className="text-center mb-6">
-        <img src="/lotus.png" alt="Logo" className="w-16 h-16 mx-auto rounded-full object-cover" />
-          <h1 className="text-3xl font-bold text-gray-800 mt-4">Welcome to Lotus</h1>
-          <p className="text-lg text-gray-600">Sign in to manage your finances</p>
+        <div className="homepage-header">
+          <img src="/lotus.png" alt="Logo" className="homepage-logo" />
+          <h1>Welcome to Lotus</h1>
+          <p>Sign in to manage your finances</p>
         </div>
 
         {/* Login Form */}
@@ -63,7 +62,7 @@ const Login = () => {
                 onChange={() => setRememberMe(!rememberMe)}
                 className="h-4 w-4 border-gray-300 rounded text-purple-600 focus:ring-2 focus:ring-purple-500"
               />
-              <label htmlFor="remember-me" className="ml-2 text-sm text-gray-600">Remember me</label>
+              <label htmlFor="remember-me" className="ml-2 text-sm text-gray-600">Remember e</label>
             </div>
             <a href="#" className="text-sm text-purple-600 hover:text-purple-800">Forgot password?</a>
           </div>
