@@ -1,0 +1,53 @@
+/* Import Tailwind base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add custom global styles */
+body {
+  background-size: 200% 200%; /* Make the gradient cover the whole screen */
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0; /* Ensures there is no unwanted margin */
+  height: 100vh; /* Ensures the background fills the entire viewport */
+}
+
+/* HomePage specific styles */
+.homepage-container {
+  @apply flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-100 to-indigo-400;  /* Added gradient */
+}
+
+.homepage-card {
+  @apply w-full max-w-md bg-white rounded-xl shadow-xl p-8;
+}
+
+.homepage-logo {
+  @apply w-16 h-16 mx-auto rounded-full object-cover;
+}
+
+.homepage-header {
+  @apply text-center mb-6;
+}
+
+.homepage-header h1 {
+  @apply text-3xl font-bold text-gray-800 mt-4;
+}
+
+.homepage-header p {
+  @apply text-lg text-gray-600;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+a:focus {
+  outline: 2px solid #9B77E0;
+}
